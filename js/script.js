@@ -10,7 +10,6 @@ let input__range__p = doc.querySelector('.input__range__p')
 
 input__color.addEventListener('input', () => {
     svg__color.style.color = input__color.value
-    // style__inputs.style.color = input__color.value
 })
 
 input__range.addEventListener('input', () => {
@@ -44,6 +43,7 @@ main__form.addEventListener('submit', (event) => {
     input__checkbox.checked = false // Очищаем значения input__checkbox
     input__select.value = '' // Очищаем значения input__checkbox input__select
     input__comment.value = '' // Очищаем значения input__checkbox input__comment
+    svg__color.style.color = ''
     console.log(form__data); // Проверяем результат
     let form__data__json = JSON.stringify(form__data) // Переводим form__data в JSON формат
     console.log(form__data__json); // Проверяем результат
